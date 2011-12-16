@@ -24,7 +24,7 @@
 # OTHER DEALINGS IN THE SOFTWARE.
 
 module.exports = (robot) ->
-  robot.respond /(abs|abstract|what\'s') (.+)/i, (res) ->
+  robot.respond /(abs|abstract|what is) (.+)/i, (res) ->
     abstract_url = "http://api.duckduckgo.com/?format=json&q=#{encodeURIComponent(res.match[2])}"
     res.http(abstract_url)
       .header('User-Agent', 'Hubot Abstract Script')
