@@ -1,6 +1,7 @@
+# ascii me <text> - Show text in ascii art.
+#
 # ASCII art.
 #
-# ascii me <text> - Show text in ascii art.
 
 module.exports = (robot) ->
   robot.respond /ascii( me)? (.+)/i, (msg) ->
